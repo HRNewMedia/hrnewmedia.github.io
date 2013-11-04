@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>1000jobboersen.de</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    
+    <link href="http://1000jb-homepage.s3.amazonaws.com/sites/4edf5089149f050009000002/theme/stylesheets/jquery.fancybox-1.3.4.css" media="screen" rel="stylesheet" type="text/css" />
+    
+    <script src="http://1000jb-homepage.s3.amazonaws.com/sites/4edf5089149f050009000002/theme/javascripts/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+    <link href="http://1000jb-homepage.s3.amazonaws.com/sites/4edf5089149f050009000002/theme/stylesheets/landing-pages/Landing_Page_1_Style.css" media="screen" rel="stylesheet" type="text/css" />
+    
+    <script>
+      !window.jQuery && document.write('<script src="/javascripts/jquery-1.4.3.min.js"><\/script>');
+    </script>
+    
+    <script src="http://1000jb-homepage.s3.amazonaws.com/sites/4edf5089149f050009000002/theme/javascripts/landing-page-1/application.js" type="text/javascript"></script>
+    
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" media="all" rel="stylesheet" type="text/css" /></head>
+  
+  <body>
+    
+    <div id="page-container" class="page-container">
+      
+      <div id="page-header" class="page-header">
+  <div id="logo" class="logo">
+    <a href="http://www.1000jobboersen.de">
+      <img alt="1000jb_logo" border="0" height="56" src="http://1000jb-homepage.s3.amazonaws.com/sites/4edf5089149f050009000002/theme/images/1000jb_logo-large.jpg" style="border: 0px;" width="380" />
+    </a>    </div>
+  <div id="hotline" class="hotline">
+    <img alt="Hotline" border="0" height="68" src="http://1000jb-homepage.s3.amazonaws.com/sites/4edf5089149f050009000002/theme/images/hotline.jpg" width="222" />
+  </div>
+</div>
+      
+      
+      <div id="page-content" class="page-content">
+        
+        <!-- formular container /Start-->
+        <div id="page-form-top-container" class="page-form-top-container">
+          
+          <div id="page-form-top" class="page-form-top typo"></div>
+          <div id="page-form-txt" class="page-form-txt">
+            <img alt="Form_bg_txt" border="0" src="http://1000jb-homepage.s3.amazonaws.com/sites/4edf5089149f050009000002/theme/images/landing-pages/form_bg_txt.jpg" />
+          </div>
+          <div id="page-form-mid" class="page-form-mid typo">
+            
+            <form accept-charset="UTF-8" action="http://1000jobboersen.de/admin/api/landing_page_leads/contents" class="simple_form email" id="new_email" method="post">
+              <input type="hidden" name="success_callback" value="http://1000jobboersen.de/fullservice?created=true" />
+              <input type="hidden" name="error_callback" value="http://1000jobboersen.de/fullservice" />
+              <table width="442" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td colspan="3" style="padding-top: 10px;padding-bottom:10px; line-height:13px;">
+                    Damit wir Sie beraten können, bitten wir Sie um die folgenden Angaben. Unsere Spezialisten werden sich innerhalb eines Werktages bei Ihnen melden.
+                    <!--
+                    <br />
+                    Falls Sie bereits eine Stellenanzeige haben, zu der Sie ein Angebot erhalten möchten, können Sie diese mit der Upload-Funktion direkt an uns senden. -->
+                  </td>
+                </tr>
+                <tr>
+                  <td width="115" style="padding-top:10px;">Anrede:<br />
+                    <select class="select optional form skurz" id="anrede" name="content[salutation]"><option value=""></option>
+                      <option value="Herr">Herr</option>
+                      <option value="Frau">Frau</option></select>
+                  </td>
+                  <td width="115" style="padding-top:10px;">Titel:<br />
+                    <select class="select optional form skurz" id="titel" name="content[title]"><option value=""></option>
+                      <option value="Dr.">Dr.</option>
+                      <option value="Prof.">Prof.</option>
+                      <option value="Dipl.-Ing">Dipl.-Ing</option></select>
+                  </td>
+                  <td width="216" style="padding-top:10px;">* Name, Vorname:<br />
+                    <input class="string required form kurz" id="name" name="content[name]" size="50" type="text" required="required" />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="padding-top:10px;">* Ihr Unternehmen:<br />
+                    <input class="string required form kurz" id="unternehmen" name="content[company]" required="required" size="50" type="text" />
+                  </td>
+                  <td style="padding-top:10px;">Position:<br />
+                    <input class="string optional form kurz" id="position" name="content[position]" size="50" type="text" />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="padding-top:10px;">Vorwahl + Rufnummer:<br />
+                    <input class="string tel optional form kurz" id="telefon" name="content[phone]" size="50" type="tel" />
+                  </td>
+                  <td style="padding-top:10px;">* E-Mail Adresse:<br />
+                    <input class="string email required form kurz" id="email" name="content[email]" required="required" size="50" type="email" />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="padding-top:10px;">Mitteilungen (z.B. bevorzugte Anrufzeit)<br />
+                    <textarea class="text optional form lang" cols="40" id="mitteilung" name="content[notes]" rows="2"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="padding-top:15px; padding-bottom:15px;">
+                    <!--<input name="send" type="hidden" class="form kurz" id="send" value="sending" />-->
+                    <input type="image" border="0" name="senden" alt="Angebot anfordern" src="http://1000jb-homepage.s3.amazonaws.com/sites/4edf5089149f050009000002/theme/images/landing-pages/btn_senden.jpg">
+                    <!--<a href="danke.php" id="various2"><img src="http://1000jb-homepage.s3.amazonaws.com/sites/4edf5089149f050009000002/theme/images/landing-pages/btn_senden.jpg" border="0" alt="Angebot anfordern" /></a>-->
+                  </td>
+                </tr>
+              </table>
+            </form><!-- Formular ENDE -->
+          </div>
+          <div id="page-form-bottom" class="page-form-bottom typo"></div>
+          <span style="padding-left:20px;">* - Pflichtfelder</span>
+        </div>
+        <!-- formular container /Ende-->
+        <div id="teaser" class="teaser">
+          <div id="angebot" class="angebot">
+            <ul style="margin-left:-10px; padding-top:50px;">
+              <li>Individuelle Auswahl der relevanten Jobbörsen,<br />Nischenportale und Social Media-Kanäle</li>
+              <li>Kostenfreie Beratung durch unsere Spezialisten</li>
+              <li>Professionelles Layout, Titel- und Textoptimierung</li>
+              <li>Anzeigen-Veröffentlichung und Refresh</li>
+              <li>Bestes Preis-Leistungsverhältnis</li>
+              <li>500 Euro Wertbonus je 1.000 Euro Anzeigenwert</li>
+              <li>Für bis zu 5 Stellenanzeigen</li>
+            </ul>
+            <br /><br /><br />
+            <a href="/beispielrechnung?return_to=http://1000jobboersen.de/fullservice" id="various1" style="font-size:14px; padding-left:20px;"><b>&gt; Beispielrechnung</b></a>
+            <br />
+            <a href="http://www.1000jobboersen.de/fullservice/angebotsbedingungen.pdf" style="font-size:14px; padding-left:20px;" target="_blank"><b>&gt; Angebotsbedingungen</b></a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div id="page-footer" class="page-footer">
+  
+  <div style="height:98px; width:80px; position:inherit; float:right; margin-bottom:-20px; margin-right:10px;">
+    <a href="http://karriere.de/"><img src="http://1000jobboersen.de/images/logos/faircompany.png" width="77" height="99" border="0" alt="karriere.de" /></a>
+  </div>
+  
+  <div style="height:60px; width:330px; background:url('http://1000jobboersen.de/stylesheets/_img/bg-jobfinder.png') no-repeat left bottom; padding:30px 0px 10px 95px;; position:inherit; float:right;">
+    <span style="color:#1e518b; font-size:20px; font-weight:bold;">Unser Partnerportal:<br /></span>
+    <a href="http://www.jobboersenfinder.de/" style="color:#313131; font-size:24px; font-weight:bold;">www.jobboersenfinder.de</a>
+  </div>
+  
+  <div id="footer-menu" class="footer-menu">
+    <a href="http://1000jobboersen.de/kontakt" style="padding-right:18px;">Kontakt</a> -
+    <a href="http://1000jobboersen.de/agb" style="padding-right:18px; padding-left:18px;">AGB</a> -
+    <a href="http://1000jobboersen.de/impressum" style="padding-left:18px;">Impressum</a>
+  </div>
+  
+</div>
+<div id="page-copy" class="page-copy">
+  © 2011 - HR New Media GmbH, Tauentzienstraße 14 | 10789 Berlin, 1000jobboersen.de |
+  Sitz: Berlin | HRB 114159 B - Amtsgericht Berlin-Charlottenburg |
+  Geschäftsführer: Florian Behn, Benjamin Pochhammer
+</div>
+    
+    
+          <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-24920454-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+          </script>
+    
+  </body>
+</html>
